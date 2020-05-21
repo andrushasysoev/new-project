@@ -1,0 +1,243 @@
+/* Fonts */
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
+       url('../fonts/roboto-v20-latin-regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/roboto-v20-latin-500.woff2') format('woff2'),
+       url('../fonts/roboto-v20-latin-500.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../fonts/roboto-v20-latin-700.woff2') format('woff2'),
+       url('../fonts/roboto-v20-latin-700.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+/* roboto-900 - latin */
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Black'), local('Roboto-Black'),
+       url('../fonts/roboto-v20-latin-900.woff2') format('woff2'),
+       url('../fonts/roboto-v20-latin-900.woff') format('woff');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+body {
+    font-family: Roboto, OpenSans, Arial, sans-serif;
+    font-size: 16px;
+
+    color: #1f1f24;
+    background-color: #ffffff;
+
+    font-style: normal;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: Roboto, sans-serif;
+    color: #262626;
+    font-size: 54px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #8993ad; 
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+.visually-hidden {
+    position: absolute !important;
+
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+}
+
+.clearfix::after {
+    display: table;
+    clear: both;
+
+    content: '';
+}
+
+.fixed-container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.fixed-container__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.effect-link {
+     -webkit-transition: all .3s ease;
+          -o-transition: all .3s ease;
+             transition: all .3s ease;
+
+     border-bottom: 1px solid #ffffff;
+}
+
+.effect-link:hover {
+    color: #fc557c;
+    border-bottom: 1px solid #fc557c;
+}
+
+.scroll-off {
+    position: relative;
+
+    overflow: hidden;
+
+    margin-right: 17px;
+}
+
+.call-box__btn {
+    background-color: #fff;
+    display: block;
+    padding: 15px 40px 12px;
+    text-align: center;
+    transition: all .4s ease;
+}
+
+.call-box__btn:hover {
+    color: #fff;
+}
+
+.more-box__btn {
+    width: 270px;
+
+    transition: all .4s ease;
+    text-align: center;
+
+    border: 1px solid #ff4e2e;
+    background-color: #ff4e2e;
+    display: block;
+
+    padding: 22px 20px;
+
+    color: #fff;
+    outline: none;
+}
+
+.more-box__center {
+    margin: 0 auto;
+}
+
+.more-box__btn:hover {
+    background-color: #fff;
+    color: #ff4e2e;
+}
+
+.title-box {
+    text-align: center;
+}
+
+
+/* Media */
+
+@media only screen and (max-width: 1024px) {
+
+    .scroll-off {
+      margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .title-box__h2 {
+        font-size: 43px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .title-box__h2 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .title-box__h2 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .title-box__h2 {
+        font-size: 30px;
+    }
+}

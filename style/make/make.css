@@ -1,0 +1,136 @@
+.make {
+    padding: 90px 40px 100px;
+}
+
+.make__box {
+    margin-bottom: 85px;
+}
+
+.make__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+
+    padding-bottom: 12px;
+
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.make__column {
+    margin-bottom: 80px;
+}
+
+.item-make__icon {
+    width: 74px;
+    height: 74px;
+    margin: 0 auto 18px;
+}
+
+.item-make__icon_coding {
+    background: url('icon/coding.png') no-repeat 50% 50%;
+}
+
+.item-make__icon_programming {
+    background: url('icon/programming.png') no-repeat 50% 50%;
+}
+
+.item-make__icon_responsive {
+    width: 79px;
+
+    background: url('icon/responsive.png') no-repeat 50% 50%;
+}
+
+.item-make__icon_tools-utensils {
+    width: 80px;
+
+    background: url('icon/tools-and-utensils.png') no-repeat 50% 50%;
+}
+
+.item-make__h3 {
+    text-align: center;
+    white-space: pre-line;
+}
+
+
+/* Media */
+
+@media only screen and (max-width: 1199px) {
+
+    .make__container {
+        max-width: 660px;
+    }
+
+    .make__row {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .make__column {
+        width: 263px;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+
+    .make {
+        padding: 42px 20px 65px;
+    }
+
+    .make__box {
+        margin-bottom: 43px;
+    }
+
+    .make__row {
+            flex-direction: column;
+
+        padding-bottom: 0;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .make__column {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .make__column {
+        margin-bottom: 48px;
+    }
+
+    .item-make__h3 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .item-make__icon {
+        margin: 0 auto 14px;
+    }
+
+    .item-make__h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
